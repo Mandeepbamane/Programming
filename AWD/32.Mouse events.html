@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #move{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+        }
+        #over{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="button1()" id="demo">Click Me</button>
+    <br><br>
+    <button id="btn2" onmousedown="mousedown()" onmouseup="mouseup()">Click Me to change Color</button>
+    <br><br>
+    <div onmousemove="mousemove(event)" id="move"></div>
+    <br><br>
+    <div id="over" onmouseover="mouseover()">Did You MouseOver??</div>
+    <br>
+    <button ondblclick="myFunction()">Double-click this paragraph to trigger a function.</button>
+    <p id="demo1"></p>
+
+    <script>
+        function button1(){
+            document.getElementById("demo").style.backgroundColor="Yellow";
+        }
+        function mousedown(){
+            document.getElementById('btn2').style.backgroundColor="Orange";
+        }
+        function mouseup(){
+            document.getElementById('btn2').style.backgroundColor="Lightgreen";
+        }
+        function mousemove(e){
+            let a=document.getElementById('move');
+            a.style.width="100px";
+            a.style.height="100px";
+            a.style.backgroundColor="Dodgerblue";
+            a.textContent="You Hovered";
+        }
+        function mouseover(){
+            const b=document.getElementById('over');
+            b.style.backgroundColor="Lightgreen";
+            b.innerHTML="Yes You MouseOver!!";
+        }
+        function myFunction() {
+        document.getElementById("demo1").innerHTML += "You have Double Clicked!!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <script>
+    function validateForm() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+
+      if (username.trim() === '') {
+        alert('Username cannot be blank');
+        return false;
+      }
+
+      if (password.length < 8) {
+        alert('Password should be at least 8 characters long');
+        return false;
+      }
+
+      if (email.indexOf('@') === -1) {
+        alert('Email should contain @');
+        return false;
+      }
+
+      if (!/^\d+$/.test(phone)) {
+        alert('Phone number should contain only numbers');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="return validateForm()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

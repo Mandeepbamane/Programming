@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background: rgb(103, 188, 23);
+    color : rgb(0, 0, 0);
+    border: 10px  red;
+    margin: 8%;
+    width:30%;
+    height: 100%;
+    font-size: 200%;
+    padding: 10%;
+    border-style: dashed dotted solid double;
+    
+} 
+
+    
+</style>
+<body >
+    <h1 >forms</h1>
+    <form action="">
+        <label for="name">enter your name</label>
+        <input type="text" id="name"  placeholder="enter your name">
+        <br><br>
+        <label for="age">enter your age</label>
+        <input type="number" id="age" placeholder="age">
+        <br>
+        <label for="email">enter your email</label>
+        <input type="email" id="email"placeholder="EMAIL" required>
+        <br><br>
+        <label for="phone no">enter your phone no</label>
+        <input type="tel" id="phone no" pattern="{0-9}5-{0-9}5" placeholder="12345-12345" required>
+        <p>enter your division</p>
+        
+        <input type="radio" id="div-a" value="div a" name="division" >
+        <label for="div-a">a</label>
+        <br>
+       
+        <input type="radio" id="div-b" value="div b" name="division">
+        <label for="div-b">b</label>
+        <br>
+        
+        <input type="radio" id="div-c" value="div c" name="division">
+        <label for="div-c">c</label>
+        <br>
+        <label for="cars">select your favorite car</label>
+        <select name="car" id="cars">
+            <option value="none"></option>
+            <option value="lambhorgini">lambhorgini</option>
+            <option value="porsche">porsche</option>
+            <option value="ferrari">ferrari</option>
+            <option value="mustang">mustang</option>
+        </select>
+        <br>
+        <br>
+        <label for="color">choose your favoritecolor</label>
+        <input type="color" id="color">
+        <br>
+        <br>
+        <label for="text"><b>your some favorite quotes heree</b> </label>
+        <textarea name="favoritequotes" id="text" cols="30" rows="10" placeholder="eneter your text here"></textarea>
+        <br><br><br>
+        <input type="reset" >
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

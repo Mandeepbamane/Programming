@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript methods</title>
+    </head>
+    <body>
+        <h1 id="my h1" class="democlass">The Element Object</h1>
+        <p id="demo"></p>
+        <div id="parent">
+            <div id="child 1">child 1</div>
+            <div id="child 2">child 2</div>
+            <div id="child 3">child 3</div>
+        </div>
+        <script>
+            const parentelement=document.getElementById("parent");
+            const length=parentelement.childNodes.length;
+            document.write("length of childNodes:"+length);
+
+            const childNode=parentelement.childNodes[0].textContent="R!!";
+            const newchild=document.createElement('div');
+            newchild.textContent="child 4";
+            parentelement.appendChild(new child);
+
+            const firstchildnode=parent element.firstChild.id;
+            const lastchildnode=parent element.lastChild textContent="Only Mandeep!";
+            const secondchild=document.getElementById("child 2");
+            parent element.removeChild(second child);
+            const firstChild=document.getElementById("child 1");
+            const newnode=document.createElement("div");
+            newnode.textContent="Replace child";
+            parent element.replaceChild(newnode,firstChild);
+
+            const has chidren=parent element.hasChildNodes();
+            document.write(has chidren);
+
+            const nextsibling=firstChild.nextSibling;
+            let idsibling=null;
+                 if(nextsibling){
+                    idsibling=idsibling.id;
+                 }
+                 const newchild=document.createElement('div');
+                 const thirdchild=document.getElementById('child 3');
+                 newchild.textContent="child 5";
+                 parent element.insertBefore(newchild1,thirdchild);
+
+                 const Element=document.getElementById("my h1");
+                 let text=Element.get Attribute("class");
+                 document.write(text);
+
+                 let a=Element.setAttribute("id","h3");
+
+                 const e=document.getElementById("h3");
+                 let t=Element.getAttribute("id");
+                 document.write("<br/>",t);
+                 </script>
+    </body>
+</html>

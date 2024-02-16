@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body bgcolor="green">
+        <table border="2">
+            <h1>Student Registration</h1>
+            <form action="submit" method="post">
+                <tr>
+                    <td><label for="name">First Name:</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Valid Email:</label></td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="birth">Date Of Birth:</label></td>
+                    <td><input type="date" id="birth"></td>
+                </tr>
+                <tr>
+                    <td><label for="fname">Father's Name:</label></td>
+                    <td><input type="text" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="mname">Mother's Name:</label></td>
+                    <td><input type="text" id="mname"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><label for="gender1">Male:</label>
+                    <input type="radio" name="gender" id="gender1">
+                    <label for="gender2">Female:</label>
+                    <input type="radio" name="gender" id="gender2"></td>
+                </tr>
+                <td><label for="qua">Qualifications</label></td>
+                <td><label for="ssc">SSC</label>
+                    <input type="checkbox" id="1">
+                    <label for="per">Percentage</label>
+                    <input type="no" id="per">
+                    <br>
+                    <label for="hsc">HSC</label>
+                    <input type="checkbox" id="2">
+                    <label for="per1">Percentage</label>
+                    <input type="no" id="per1">
+                    <br>
+                    <label for="bsc">BSC</label>
+                    <input type="checkbox" id="3">
+                    <label for="per2">Percentage</label>
+                    <input type="no" id="per2">
+                    <br>
+                    <label for="mca">MCA</label>
+                    <input type="checkbox" id="4">
+                    <label for="per3">Percentage</label>
+                    <input type="no" id="per3">
+                    <br>
+                    <label for="mba">MBA</label>
+                    <input type="checkbox" id="5">
+                    <label for="per4">Percentage</label>
+                    <input type="no" id="per4">
+                    <br>
+                </td>
+                <tr>
+                    <td><label for="exp">Experience</label></td>
+                    <td>
+                        <select id="exp"><option hidden selected>Select</option>
+                        <option id="1">0-1 yrs</option>
+                        <option id="2">1-2 yrs</option>
+                        <option id="3">2-3 yrs</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Upload photo</label></td>
+                    <td><input type="file" id="photo" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </form>
+            </table>
+    </body>
+</html>

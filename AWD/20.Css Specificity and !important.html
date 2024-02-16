@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and !important</title>
+    <style>
+        *{
+            background-color:yellow;
+            font-weight: 700;
+        }
+        p{
+            color: blue;
+            font-family: monospace;
+        }
+        #example{
+            color: red;
+        }
+        .important {
+            color: darkgreen !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Specificity and !Important</h1>
+    <p>This is a paragraph displays the concept of basic css styling</p>
+    <p id="example">This paragraph displays concept of CSS Specificity.</p>
+    <p class="important" id="example">This paragraph displayimg the concept of "! Important" rule.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="text_inp" onkeydown="keydown(event)" onkeyup="keyup(event)">
+        <input type="button" value="Submit" onclick="Submit()">
+    </form>
+    <script>
+        function keydown(event) {
+            document.body.style.backgroundColor = "Blue";
+        }
+
+        function keyup(event) {
+            var inputBox = document.getElementById("text_inp");
+            inputBox.value = inputBox.value.toUpperCase();
+        }
+
+        function Submit() {
+            alert("Data submitted");
+        }
+    </script>
+</body>
+</html>

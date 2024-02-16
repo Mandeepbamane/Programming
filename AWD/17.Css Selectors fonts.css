@@ -1,0 +1,15 @@
+#menu>li{
+    color:blue;
+}
+h2+.important{
+     font-weight: bold;
+}
+.tip~.note{
+    background-color: yellow;
+}
+a[target="_blank"]{
+    color:green;
+}
+p,.container,h3{
+    font-size: 18px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload=function(){
+            var loadtime= new Date();
+            localStorage.setItem('loadtime',loadtime);
+        }
+        window.onunload=function(){
+            var leavetime= new Date();
+            localStorage.setItem('leavetime',leavetime);
+            window.location.href="newpage.html"
+        }
+    </script>
+</body>
+</html>

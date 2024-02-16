@@ -1,0 +1,33 @@
+fieldset{
+    width:fit-content;
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: blueviolet;
+}
+button:hover{
+    background-color: dodgerblue;
+}
+button:active{
+    border: dotted;
+    border-color: red;
+}
+input:focus{
+    background-color:yellow;
+}
+ol>li:first-child{
+    color:orange;
+}
+ol>li:last-child{
+    color: orangered;
+}
+p:first-child{
+    font-family:algerian;
+    margin:10px;
+}
+p:last-child{
+    font-family:algerian;
+    margin:10px;
+}

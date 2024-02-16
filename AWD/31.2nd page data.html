@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New Data</h1>
+    <p>Load Time: <span id="loadtime"></span></p>
+    <p>Leave Time: <span id="leavetime"></span></p>
+    <script>
+        const loadtime=new Date(localStorage.getItem('loadtime'));
+        const leavetime=new Date(localStorage.getItem('leavetime'));
+        document.getElementById('loadtime').innerHTML=loadtime;
+        document.getElementById('leavetime').innerHTML=leavetime;
+    </script>
+</body>
+</html>
